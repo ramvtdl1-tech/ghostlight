@@ -54,3 +54,7 @@ NOT READY. Codex created the first implementation and these planning files. No K
 Startup: founder confirmation, LinkedIn, startup website. Student: all team members enrolled; supply profiles, student emails, year/degree, institution and proof if requested. Ghost of Kiroween Past: verified 2025 registration with a NEW 2026 project. Kiro Crew: actual new Crew app and public repo. Blog: public third-party post during build period mentioning this hackathon. Social: post starts with #KiroweenHackathon26 and discusses actual Kiro experience. Demo: no extra steps. Do not claim bonus eligibility without evidence.
 
 Total listed cash pool: $100,000. Overall prizes $30k/$20k/$10k; category prizes $5k each. One overall OR category prize plus any qualifying bonuses. Verify current rules before submission; organizer decisions determine eligibility and awards.
+
+## Product expansion
+
+The primary application is now a usable tabletop exercise workspace: custom scenarios, timed sessions, commander names, timestamped journals, postmortem editing, owned action items, JSON backup/restore, and Markdown exports. Original scored practice remains a separate route. This expansion was implemented by Codex; it does not resolve the Kiro-use requirement. The demo should show scenario creation, a timeline entry, completion, action ownership, and export, then actual Kiro evidence once available.
