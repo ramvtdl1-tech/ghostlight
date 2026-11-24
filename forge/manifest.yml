@@ -1,0 +1,30 @@
+modules:
+  jira:globalPage:
+    - key: ghostlight-workspace
+      resource: workspace
+      resolver:
+        function: resolver
+      title: Ghostlight
+  confluence:globalPage:
+    - key: ghostlight-confluence
+      resource: workspace
+      resolver:
+        function: resolver
+      title: Ghostlight
+      route: ghostlight
+  function:
+    - key: resolver
+      handler: src/index.handler
+resources:
+  - key: workspace
+    path: static/build
+permissions:
+  scopes:
+    - read:jira-work
+    - write:jira-work
+    - storage:app
+    - read:space:confluence
+    - write:page:confluence
+app:
+  runtime:
+    name: nodejs22.x
