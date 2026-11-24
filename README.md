@@ -11,7 +11,7 @@ npm test
 npm start
 ```
 
-Open http://localhost:4173. Start an exercise, select a scenario, enter a commander, record timeline entries, reveal evidence, and complete the exercise to see facilitator guidance. Edit postmortem notes and add owned action items. Download a Markdown postmortem or a JSON backup. Refresh preserves exercises. Use Scenario library to create custom exercises. Backup restore validates the file before asking to replace the workspace.
+Open http://localhost:4173. Start an exercise, select a scenario, enter a commander, record timeline entries, reveal evidence, and complete the exercise to see facilitator guidance. Edit postmortem notes and add owned action items. Download a Markdown postmortem or a JSON backup. Refresh preserves exercises. Use Scenario library to create or edit custom scenarios. Each library card has a Start exercise button and an Edit scenario button; editing updates the library entry while leaving the scenario snapshot inside any already-created exercises unchanged. Backup restore validates the file before asking to replace the workspace.
 
 The Quick practice link opens the original scored drills. Select an incident, inspect traces, then choose the action supported by evidence. Wrong interventions reduce your score. Reset restarts the current incident. Switching incidents starts a fresh run. Progress is local to this browser; no accounts, shared sessions, or production monitoring exist. Export saves a report locally.
 
@@ -19,11 +19,11 @@ The Quick practice link opens the original scored drills. Select an incident, in
 
 Publish the `dist` directory on any static host (Cloudflare Pages, Netlify, GitHub Pages). There is no build command. The app works at a subpath. For GitHub Pages, publish dist using a Pages deployment workflow or select a branch containing its contents. No environment variables are needed. Google Fonts is optional; system fonts work if it is blocked.
 
-For Sites, `.openai/hosting.json` contains the registered Site identity. Hosting is owner-private by default; this must be made accessible to judges or deployed separately at a public URL before submission. Keep the application accessible without payment through January 29, 2027, 1 PM PT.
+For Sites, `.openai/hosting.json` contains the registered Site identity. The live Ghostlight site is public and needs no sign-in. Keep the application accessible without payment through January 29, 2027, 1 PM PT.
 
 ## Submission status
 
-Read HACKATHON.md before submitting. The initial implementation and `.kiro` documents were authored by Codex, not Kiro. Merely including these documents does not satisfy the Kiro requirement. Complete meaningful development using Kiro, retain actual evidence, and write an accurate account of its contribution. Public GitHub publication, demo recording, and eligibility confirmation are still required.
+Read HACKATHON.md before submitting. The initial implementation and `.kiro` documents were authored by Codex, not Kiro. Merely including these documents does not satisfy the Kiro requirement. Authenticated Kiro CLI implemented saved-scenario editing and snapshot-preservation tests; see KIRO_USAGE.md for the accurate contribution record. Public GitHub publication and eligibility confirmation are complete. The demo video and final entry remain outstanding.
 
 ## Source and privacy
 
@@ -33,4 +33,4 @@ Read HACKATHON.md before submitting. The initial implementation and `.kiro` docu
 
 Workspace data uses a separate v2 browser storage key; original practice progress remains in its v1 key. No cloud database or concurrent collaboration is provided. Use a screen share to facilitate with teammates. Clearing browser data removes local records; JSON backups are the recovery mechanism. Storage failures are shown prominently and avoid silently overwriting unreadable data. Limits: 100 scenarios, 200 exercises, 500 timeline entries per exercise, 100 follow-ups per exercise, 5 MB imported backup. Custom scenario answers are hidden in the exercise UI but remain readable in browser source/storage; this is a facilitation tool, not a secure examination system. Multiple browser tabs are not synchronized; use one editing tab.
 
-Workspace domain logic: `dist/workspace.js`; interface: `dist/workspace-app.js`. Tests cover lifecycle, immutable timeline events, postmortem export, backup round-trip, invalid records, and duration validation.
+Workspace domain logic: `dist/workspace.js`; interface: `dist/workspace-app.js`. Tests cover lifecycle, immutable timeline events, postmortem export, backup round-trip, invalid records, duration validation, and scenario editing with snapshot preservation.

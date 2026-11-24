@@ -10,3 +10,4 @@ Planning input authored by Codex, November 24, 2026. Not a record of Kiro execut
 6. Export produces a Markdown timeline and current outcome.
 7. UI supports mobile layouts, keyboard focus, reduced motion and live feedback.
 8. The app never accesses production systems or claims actual monitoring.
+9. A user can edit any saved scenario from the library. Editing updates the library entry and all future exercises started from that scenario, but leaves the scenario snapshot embedded in already-created exercises unchanged so historical records remain accurate.

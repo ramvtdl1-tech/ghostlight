@@ -58,3 +58,7 @@ Total listed cash pool: $100,000. Overall prizes $30k/$20k/$10k; category prizes
 ## Product expansion
 
 The primary application is now a usable tabletop exercise workspace: custom scenarios, timed sessions, commander names, timestamped journals, postmortem editing, owned action items, JSON backup/restore, and Markdown exports. Original scored practice remains a separate route. This expansion was implemented by Codex; it does not resolve the Kiro-use requirement. The demo should show scenario creation, a timeline entry, completion, action ownership, and export, then actual Kiro evidence once available.
+
+## Verified update — November 25, 2026
+
+Public source is now https://github.com/ramvtdl1-tech/ghostlight and the live Sites app has public access. Authenticated Kiro CLI implemented saved-scenario editing and four regression tests; all 14 tests pass. Read KIRO_USAGE.md for the exact contribution. Earlier status statements above are historical and superseded by this update. The public YouTube video, personal eligibility confirmation, and final rule acceptance remain outstanding.
